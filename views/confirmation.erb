@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>All Presidents</title>
+</head>
+<body>
+
+	<% @presidents.each do |p| %>
+	<p><b><%= p.lname %>, <%= p.fname %></b></p>
+
+	<% end %> 
+	<br />
+	<p>SESSION = The last president entered is President <%= @last %></p>
+</body>
+</html>

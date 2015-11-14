@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Enter President</title>
+</head>
+	<body>
+		<form method= "post" action="/president" class="form">
+		
+			<label><b>President's First Name</b></label>
+				<input type="text" name="first_name">
+			<label><b>Last Name</b></label>
+				<input type="text" name="last_name">
+				<button type="submit">Submit</button>
+			<%= flash[:notice] %>
+
+		</form>
+	</body>
+</html>
